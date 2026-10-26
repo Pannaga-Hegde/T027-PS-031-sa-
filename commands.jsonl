@@ -1,0 +1,9 @@
+{"type": "INIT_STORE", "store_id": "S1", "lat": 12.9716, "lon": 77.5946, "opening_time": "08:00", "closing_time": "22:00", "picking_capacity": 12, "active_riders": 5}
+{"type": "ADD_INVENTORY", "store_id": "S1", "sku_id": "MILK1", "category": "Dairy", "brand": "Amul", "price": 50.0, "quantity": 10}
+{"type": "ADD_INVENTORY", "store_id": "S1", "sku_id": "MILK2", "category": "Dairy", "brand": "Nandini", "price": 45.0, "quantity": 5}
+{"type": "PLACE_ORDER", "order_id": "O1", "customer_lat": 12.9726, "customer_lon": 77.5956, "timestamp": "2023-10-26T10:05:00", "line_items": [{"sku_id": "MILK1", "quantity": 2}], "substitution_preference": "ALLOW"}
+{"type": "DELIVER_ORDER", "order_id": "O1", "timestamp": "2023-10-26T10:15:00"}
+{"type": "PRINT_TRACE", "order_id": "O1"}
+{"type": "PLACE_ORDER", "order_id": "O2", "customer_lat": 12.9736, "customer_lon": 77.5966, "timestamp": "2023-10-26T10:06:00", "line_items": [{"sku_id": "MILK2", "quantity": 1}], "substitution_preference": "ALLOW"}
+{"type": "DELIVER_ORDER", "order_id": "O2", "timestamp": "2023-10-26T10:20:00"}
+{"type": "PRINT_TRACE", "order_id": "O2"}
